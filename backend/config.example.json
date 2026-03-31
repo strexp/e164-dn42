@@ -1,0 +1,16 @@
+{
+    "server": {
+        "port": 3000,
+        "jwtSecret": "change-this-secret-in-production",
+        "frontendUrl": "http://localhost:3001"
+    },
+    "dns": {
+        "zoneFilePath": "../data/e164.dn42.zone",
+        "soa": {
+            "ns": "ns1.yourdomain.dn42.",
+            "email": "admin.yourdomain.dn42."
+        },
+        "maxNsServers": 4
+    },
+    "oauth": []
+}

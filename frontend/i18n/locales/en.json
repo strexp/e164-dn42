@@ -1,0 +1,141 @@
+{
+  "footer": {
+    "title": "e164.dn42",
+    "madeWith": "Made with",
+    "forDN42": "for the DN42 Network",
+    "copyright": "© {year} e164.dn42 project. All rights reserved."
+  },
+  "nav": {
+    "publicPhonebook": "Public Phonebook",
+    "nsSettings": "NS Delegation",
+    "myExtensions": "My Extensions",
+    "participants": "Participants",
+    "asInfo": "AS Info",
+    "logout": "Logout",
+    "login": "Login"
+  },
+  "dialog": {
+    "cancel": "Cancel",
+    "confirm": "Confirm"
+  },
+  "snackbar": {
+    "close": "Close"
+  },
+  "alert": {
+    "nonDN42": "Since your ASN does not start with 424242, you are currently in <b>read-only mode</b>. You cannot allocate an exclusive prefix or write NS/extension records."
+  },
+  "participant": {
+    "allocatedPrefix": "ALLOCATED PREFIX"
+  },
+  "phonebook": {
+    "add": {
+      "title": "Add Extension",
+      "description": "Your full number will be the prefix <b>{prefix}</b> plus the extension suffix you enter.",
+      "suffixLabel": "Extension Suffix",
+      "suffixPlaceholder": "e.g. 12345",
+      "nameLabel": "Device/Contact Name",
+      "namePlaceholder": "e.g. My Phone",
+      "cancel": "Cancel",
+      "save": "Save",
+      "rules": {
+        "suffixRequired": "Please enter extension suffix",
+        "suffixDigits": "Must be digits only",
+        "suffixMax": "Maximum length is {max}",
+        "nameRequired": "Please enter name",
+        "nameMax": "Name must be at most 50 characters"
+      },
+      "success": "Added successfully",
+      "failed": "Failed to add"
+    },
+    "personal": {
+      "title": "My Extensions",
+      "description": "Manage your exclusive extension numbers and publish them to the public phonebook.",
+      "addBtn": "Add Extension",
+      "noData": "No extension records yet",
+      "noDataHint": "Click the button on the top right to add a new extension",
+      "deleteConfirmTitle": "Confirm delete extension?",
+      "deleteConfirmBtn": "Confirm Delete",
+      "deleteConfirmText": "You are deleting extension <b>{number}</b> ({name}). This action cannot be undone.",
+      "deleteSuccess": "Deleted successfully",
+      "deleteFailed": "Failed to delete",
+      "headers": {
+        "number": "Full Number",
+        "name": "Device/Contact Name",
+        "actions": "Actions"
+      }
+    },
+    "public": {
+      "title": "Public Phonebook",
+      "description": "Browse and search all published DN42 E164 number records.",
+      "info": "Only numbers with valid NS configured and service enabled in settings will appear here.",
+      "search": "Search records",
+      "downloadVcf": "vCard",
+      "downloadCsv": "CSV",
+      "downloadSuccess": "Successfully downloaded {format}",
+      "downloadFailed": "Failed to download",
+      "headers": {
+        "asn": "ASN",
+        "number": "Full Number",
+        "name": "Device/Contact Name"
+      }
+    }
+  },
+  "auth": {
+    "callback": {
+      "failedTitle": "Login Failed",
+      "failedDesc": "Returning to login page...",
+      "loadingTitle": "Logging in...",
+      "loadingDesc": "Please wait while we verify your identity."
+    },
+    "login": {
+      "welcome": "Welcome to e164.dn42",
+      "description": "Securely login to your console using an OIDC identity provider",
+      "loading": "Loading auth providers...",
+      "loginWith": "Login with {name}",
+      "terms": "By logging in, you agree to the e164.dn42 registry's<br />Terms of Service and Privacy Policy."
+    }
+  },
+  "dashboard": {
+    "welcome": "Welcome back, AS{asn}",
+    "description": "Manage your e164.dn42 resources and settings here.",
+    "yourPrefix": "Your Prefix",
+    "noPrefix": "No prefix allocated",
+    "yourE164Zone": "Your E164 Zone",
+    "nsSettings": "NS Delegation Settings",
+    "nsSettingsDesc": "Configure your DNS delegation servers to manage DNS records.",
+    "manageExtensions": "Manage Extensions",
+    "manageExtensionsDesc": "Add or edit your personal phone extension records and devices.",
+    "copied": "Copied to clipboard",
+    "copyFailed": "Failed to copy"
+  },
+  "ns": {
+    "title": "NS Delegation Settings",
+    "description": "Manage your DNS delegation so others can resolve your numbers.",
+    "enableService": "Enable Service",
+    "enableServiceDesc": "When enabled, your phonebook and NS settings will be publicly accessible and your Zone will be generated.",
+    "listTitle": "DNS Server List",
+    "listSubtitle": "At least 1 and up to 4 NS servers are allowed, supporting IPv4, IPv6, or domains (must be .dn42)",
+    "addServer": "Add Server",
+    "saveChanges": "Save Changes",
+    "loadFailed": "Failed to load settings",
+    "validation": {
+      "required": "NS server address cannot be empty",
+      "invalid": "Please enter a valid IP address or domain",
+      "checkInputs": "Please make sure all NS input fields are filled correctly"
+    },
+    "statusEnabled": "Service enabled",
+    "statusDisabled": "Service disabled",
+    "statusFailed": "Failed to update status",
+    "saveSuccess": "Saved successfully",
+    "saveFailed": "Failed to save"
+  },
+  "participants": {
+    "title": "Participants List",
+    "description": "Discover all ASNs participating in the DN42 E.164 project and their allocated prefixes.",
+    "search": "Search ASN or prefix",
+    "headers": {
+      "asn": "ASN",
+      "prefix": "Allocated Prefix"
+    }
+  }
+}

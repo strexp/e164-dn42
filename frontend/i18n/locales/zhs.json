@@ -1,0 +1,141 @@
+{
+  "footer": {
+    "title": "e164.dn42",
+    "madeWith": "Made with",
+    "forDN42": "for the DN42 Network",
+    "copyright": "© {year} e164.dn42 project. All rights reserved."
+  },
+  "nav": {
+    "publicPhonebook": "公共号码簿",
+    "nsSettings": "NS 委派",
+    "myExtensions": "我的分机",
+    "participants": "参与者",
+    "asInfo": "AS 信息",
+    "logout": "退出登录",
+    "login": "登录"
+  },
+  "dialog": {
+    "cancel": "取消",
+    "confirm": "确认"
+  },
+  "snackbar": {
+    "close": "关闭"
+  },
+  "alert": {
+    "nonDN42": "由于您的 ASN 未以 424242 开头，您目前处于<b>只读模式</b>，无法分配专属前缀以及写入 NS/分机记录。"
+  },
+  "participant": {
+    "allocatedPrefix": "分配前缀"
+  },
+  "phonebook": {
+    "add": {
+      "title": "新增分机",
+      "description": "您的完整号码将是前缀 <b>{prefix}</b> 加上您输入的分机后缀。",
+      "suffixLabel": "分机后缀",
+      "suffixPlaceholder": "例如: 12345",
+      "nameLabel": "设备/联系人名称",
+      "namePlaceholder": "例如: 我的手机",
+      "cancel": "取消",
+      "save": "保存",
+      "rules": {
+        "suffixRequired": "请输入分机后缀",
+        "suffixDigits": "必须是纯数字",
+        "suffixMax": "最长不超过 {max} 位",
+        "nameRequired": "请输入名称",
+        "nameMax": "名称最多 50 个字符"
+      },
+      "success": "添加成功",
+      "failed": "操作失败"
+    },
+    "personal": {
+      "title": "我的分机",
+      "description": "管理您的专属分机号码，将其发布到公开号码簿。",
+      "addBtn": "新增分机",
+      "noData": "暂无分机记录",
+      "noDataHint": "点击右上方按钮添加一个新的分机",
+      "deleteConfirmTitle": "确认删除分机？",
+      "deleteConfirmBtn": "确认删除",
+      "deleteConfirmText": "您正在删除分机 <b>{number}</b> ({name})。此操作无法撤销。",
+      "deleteSuccess": "删除成功",
+      "deleteFailed": "删除失败",
+      "headers": {
+        "number": "完整号码",
+        "name": "设备/联系人名称",
+        "actions": "操作"
+      }
+    },
+    "public": {
+      "title": "公共号码簿",
+      "description": "浏览并搜索所有已公开的 DN42 E164 号码记录。",
+      "info": "只有配置了有效 NS 且在设置中开启了启用服务的号码才会显示在这里。",
+      "search": "搜索记录",
+      "downloadVcf": "vCard",
+      "downloadCsv": "CSV",
+      "downloadSuccess": "下载 {format} 成功",
+      "downloadFailed": "下载失败",
+      "headers": {
+        "asn": "ASN",
+        "number": "完整号码",
+        "name": "设备/联系人名称"
+      }
+    }
+  },
+  "auth": {
+    "callback": {
+      "failedTitle": "登录失败",
+      "failedDesc": "正在返回登录页面...",
+      "loadingTitle": "正在登录...",
+      "loadingDesc": "请稍候，正在验证您的身份信息"
+    },
+    "login": {
+      "welcome": "欢迎来到 e164.dn42",
+      "description": "使用 OIDC 身份提供程序安全地登录您的控制台",
+      "loading": "加载认证提供商...",
+      "loginWith": "通过 {name} 登录",
+      "terms": "登录即表示:<br />您同意遵守 e164.dn42 注册处的服务条款与隐私政策"
+    }
+  },
+  "dashboard": {
+    "welcome": "欢迎回来，AS{asn}",
+    "description": "在此管理您的 e164.dn42 资源与设置。",
+    "yourPrefix": "您的前缀",
+    "noPrefix": "无分配前缀",
+    "yourE164Zone": "您的 E164 Zone",
+    "nsSettings": "NS 委派设置",
+    "nsSettingsDesc": "配置您的 DNS 委派服务器，管理解析记录。",
+    "manageExtensions": "管理分机",
+    "manageExtensionsDesc": "添加或编辑您的个人电话分机记录及设备。",
+    "copied": "已复制到剪贴板",
+    "copyFailed": "复制失败"
+  },
+  "ns": {
+    "title": "NS 委派设置",
+    "description": "管理您的 DNS 委派，让其他人可以解析到您的号码。",
+    "enableService": "启用服务",
+    "enableServiceDesc": "开启后，您的号码簿与 NS 设置将被公开访问并生成 Zone。",
+    "listTitle": "DNS 服务器列表",
+    "listSubtitle": "至少需要 1 个，最多允许配置 4 个 NS 服务器，支持 IPv4、IPv6 或域名（需为 .dn42）",
+    "addServer": "添加服务器",
+    "saveChanges": "保存更改",
+    "loadFailed": "加载设置失败",
+    "validation": {
+      "required": "NS 服务器地址不能为空",
+      "invalid": "请输入有效的 IP 地址或域名",
+      "checkInputs": "请确保所有 NS 输入框均已正确填写"
+    },
+    "statusEnabled": "服务已启用",
+    "statusDisabled": "服务已停用",
+    "statusFailed": "状态更新失败",
+    "saveSuccess": "保存成功",
+    "saveFailed": "保存失败"
+  },
+  "participants": {
+    "title": "参与者列表",
+    "description": "发现所有加入 DN42 E.164 计划的 ASN 及其分配的前缀。",
+    "search": "搜索 ASN 或前缀",
+    "headers": {
+      "asn": "ASN",
+      "prefix": "分配前缀"
+    }
+  }
+}
